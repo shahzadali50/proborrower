@@ -4,7 +4,7 @@ $(document).ready(function(){
         margin:9, 
         dots: false,
         autoplay: false,         // Enables autoplay
-        autoplayTimeout: 2000,  // Delay between transitions (in milliseconds)
+        autoplayTimeout: 3000,  // Delay between transitions (in milliseconds)
         autoplayHoverPause: true,
         responsive:{
             0:{

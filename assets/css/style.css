@@ -84,7 +84,7 @@ img {
   color: var(--text-white);
 }
 section{
-  padding: 50px 0px;
+  padding: 60px 0px;
 }
 /* header*/
 
@@ -208,12 +208,15 @@ header .dropdown .dropdown-item:focus {
   font-weight: 700;
   color: var(--text-blue);
   font-size: 38px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+}
+.text-22px{
+  font-size: 22px;
+  font-weight: 600;
 }
 .text-16px{
   font-size: 16px;
   font-weight: 400;
-
 }
 
 
@@ -569,6 +572,33 @@ header .dropdown .dropdown-item:focus {
   text-align: left;
   color: var(--text-blue);
 }
+/* works */
+
+.works .card{
+  padding: 45px 43px;
+  border-radius: 14px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 30px;
+}
+
+.works .text-22px{
+  width: 209px;
+  line-height: 30px;
+}
+.works .card img{
+  height: 309px;
+  width: 456px;
+}
+.works .work-number{
+  width: 65px;
+  height: 65px;
+  background-color: #cfcdff;
+  border-radius: 50%;
+  color: var(--text-blue);
+  font-size: 22px;
+  font-weight: 600;
+  border: 8px solid #eff3ff;
+}
 
 /* popular-features */
 .features-icon{
@@ -577,11 +607,13 @@ header .dropdown .dropdown-item:focus {
   background-color: #d9eff6;
   border-radius: 50%;
   color: #15a5bf;
-  font-size: 25px;
 }
-.features-slider .item {
+.features-icon img{
+  width: 25px !important;
 }
-
+.security .main-heading{
+  margin-bottom: 15px !important;
+}
 /* Footer */
 
 footer {
@@ -670,7 +702,7 @@ footer form .input-group-btn .btn:hover {
   padding-left: 0 !important;
 }
 
-.social-link li a img {
+.social-link li .social-link-img {
   width: 26px;
   height: 26px;
   object-fit: contain;
@@ -771,6 +803,10 @@ footer form .input-group-btn .btn:hover {
 }
 
 @media only screen and (max-width: 991px) {
+
+  .works .text-22px{
+    width: 100%;
+  }
   header .navbar-light .navbar-nav .nav-item i {
     float: right;
     font-size: 12px;
@@ -844,6 +880,10 @@ footer form .input-group-btn .btn:hover {
   .main-heading {
     font-size: 30px;
   }
+  .works .card img {
+    height: 271px;
+}
+
   .hero-section {
     padding: 100px 0 0;
     text-align: center;
@@ -948,6 +988,12 @@ footer form .input-group-btn .btn:hover {
   .main-heading {
     font-size: 25px;
   }
+  .text-22px{
+    font-size: 18px;;
+  }
+  .text-16px {
+    font-size: 14px;
+}
   .hero-section h1 {
     margin-bottom: 20px;
     font-size: 28px;
