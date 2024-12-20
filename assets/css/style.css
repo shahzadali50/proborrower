@@ -83,12 +83,9 @@ img {
   border-color: var(--btn-secondary-bg);
   color: var(--text-white);
 }
-
-.text-primary {
-  color: #43C4FE !important;
+section{
+  padding: 50px 0px;
 }
-
-
 /* header*/
 
 header nav {
@@ -572,6 +569,19 @@ header .dropdown .dropdown-item:focus {
   text-align: left;
   color: var(--text-blue);
 }
+
+/* popular-features */
+.features-icon{
+  width: 53px;
+  height: 53px;
+  background-color: #d9eff6;
+  border-radius: 50%;
+  color: #15a5bf;
+  font-size: 25px;
+}
+.features-slider .item {
+}
+
 /* Footer */
 
 footer {
@@ -664,7 +674,7 @@ footer form .input-group-btn .btn:hover {
   width: 26px;
   height: 26px;
   object-fit: contain;
-  margin: 0px 5px;
+  margin-right: 10px;
 }
 
 .footer-blog .media img {
@@ -692,21 +702,11 @@ footer form .input-group-btn .btn:hover {
   margin-bottom: 0;
   font-size: 14px;
 }
-
-.copy-right a {
-  color: var(--text-blue);
-}
-
-.copy-right a:hover {
-  color: var(--text-primary);
-}
 .copy-right .border-gray {
   height: 1px;
   background-color: #d6d8de;
 }
-.copy-right .line-img {
-  height: 19px;
-}
+
 
 
 .navbar-light .navbar-toggler {
@@ -721,78 +721,6 @@ footer form .input-group-btn .btn:hover {
   -webkit-text-stroke: 1px var(--primary);
 }
 
-
-/* Side Nav */
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  background-color: #121131;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  text-align: right;
-  color: #fff;
-}
-
-.sidenav hr {
-  border-top: 1px solid #2c68aa;
-  margin: 15px 0;
-}
-
-.sidenav-inner {
-  width: 280px;
-  padding: 15px 25px;
-}
-
-.sidenav ul li a {
-  padding: 8px 8px;
-  text-decoration: none;
-  font-size: 14px;
-  color: var(--text-white);
-  font-weight: 600;
-  display: block;
-  text-transform: uppercase;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: var(--text-primary);
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 5px;
-  left: 15px;
-  font-size: 28px;
-  color: #fff;
-}
-
-.sidenav .btn {
-  border-radius: 5px;
-  text-transform: uppercase;
-}
-
-.sidenav li a img {
-  width: 25px;
-  margin-left: 15px;
-}
-
-.sidenav-icon span {
-  background-size: contain;
-  background-position: center;
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  margin-left: 15px;
-  position: relative;
-  top: 5px;
-}
 
 .icon-repair {
   background-image: url('../../assets/images/repair-icon.png');
