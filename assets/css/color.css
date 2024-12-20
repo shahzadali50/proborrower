@@ -1,0 +1,29 @@
+
+:root {
+
+	--black: #1a1a1a;
+	--white: #fff;
+	--primary: #0fa9cb;
+
+	/* Background color */
+	--bg-white: #ffffff;
+	--bg-primary: #43C4FE;
+	--bg-gray: #F4F4F4;
+
+
+	/* text color */
+
+	--text-blue: #1c1a4f;
+	--text-black: #1a1a1a;
+	--text-white: #fff;
+	--text-primary: #ffffff;
+
+	/* Button */
+	--btn-primary-bg: #0fa9cb;
+	--btn-secondary-bg: #fb8f37;
+	--btn-info-bg: #43C4FE;
+
+	/* Foooter */
+	--footer-bg: #f0f3ff;
+
+}
