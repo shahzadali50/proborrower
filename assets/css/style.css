@@ -529,6 +529,10 @@ header .dropdown .dropdown-item:focus {
   background: var(--white);
   border-radius: 0;
 }
+.faq-section .card .card-header .btn-header-link .add-question {
+  color: var(--black);
+  width: 360px;;
+}
 
 .faq-section .card .card-header .btn-header-link.collapsed:after {
   content: "\f067";
