@@ -465,18 +465,8 @@ header .dropdown .dropdown-item:focus {
 
 
 /* FAQ */
-
-.faq-section {
-  padding: 60px 0 80px;
-}
-
-.faq-section h2 {
-  font-size: 32px;
-  margin-bottom: 50px;
-}
-
 .faq-section p {
-  color: #5268C2;
+  color: rgb(131, 130, 130);
 }
 
 .faq-section .card {
@@ -492,33 +482,31 @@ header .dropdown .dropdown-item:focus {
 
 .faq-section .nav-tabs {
   border-bottom: none;
+    background: #eff3ff;
+    padding: 6px;
+    border-radius: 6px;
 }
 
 .faq-section .nav-tabs .nav-link {
-  background: #A9B5E5;
-  min-width: 180px;
-  margin-right: 15px;
-  border-radius: 10px 10px 0 0;
-  color: #5268C2;
-  font-weight: 600;
   padding: 6px 15px;
   margin-bottom: 0px;
+  border-radius: 5px;
 }
 
 .faq-section .nav-tabs .nav-item.show .nav-link,
 .faq-section .nav-tabs .nav-link.active,
 .faq-section .nav-tabs .nav-link:hover {
-  background: var(--white);
+  background: var(--primary);
+  border-color: var(--primary);;
+  color: var(--white);
 }
 
 .faq-section .card .card-header .btn-header-link {
   display: block;
   text-align: left;
-  background: var(--white);
-  color: var(--text-blue);
-  font-size: 18px;
   padding: 15px 0;
   border-radius: 0;
+  font-weight: 400;
 }
 
 .faq-section .card .card-header .btn-header-link:after {
@@ -539,13 +527,13 @@ header .dropdown .dropdown-item:focus {
 
 .faq-section .card .card-header .btn-header-link.collapsed {
   background: var(--white);
-  color: var(--text-blue);
   border-radius: 0;
 }
 
 .faq-section .card .card-header .btn-header-link.collapsed:after {
   content: "\f067";
-  color: var(--text-blue);
+  color: var(--black);
+  /* margin-right: 70px; */
 }
 
 .faq-section .card .collapsing {
@@ -555,7 +543,7 @@ header .dropdown .dropdown-item:focus {
 
 .faq-section .accordion .card {
   box-shadow: none;
-  border-bottom: 1px solid #dbdada;
+  margin-bottom: 30px;
 }
 
 .faq-section .accordion .card-header {
@@ -568,10 +556,6 @@ header .dropdown .dropdown-item:focus {
   font-size: 14px;
 }
 
-.faq-section .accordion .card-body p {
-  text-align: left;
-  color: var(--text-blue);
-}
 /* works */
 
 .works .card{
@@ -785,6 +769,9 @@ footer form .input-group-btn .btn:hover {
   .dropdown:hover>.dropdown-menu {
     display: block;
   }
+  .faq-section .nav-tabs {
+      min-width: 415px;
+  }
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {}
@@ -879,10 +866,15 @@ footer form .input-group-btn .btn:hover {
 @media (max-width: 767px) {
   .main-heading {
     font-size: 30px;
+    margin-bottom: 20px;
   }
   .works .card img {
     height: 271px;
-}
+    }
+    .faq-section .accordion .card {
+      margin: 0px 20px 0px 20px;
+
+  }
 
   .hero-section {
     padding: 100px 0 0;
@@ -932,9 +924,11 @@ footer form .input-group-btn .btn:hover {
   footer ul li a {
     font-size: 13px;
   }
+  /* faq-section */
   .faq-section h3 {
     font-size: 20px;
   }
+
   .learn-section {
     text-align: center;
   }
@@ -985,6 +979,9 @@ footer form .input-group-btn .btn:hover {
 }
 
 @media (max-width: 576px) {
+  section {
+    padding: 50px 0px;
+}
   .main-heading {
     font-size: 25px;
   }
@@ -993,6 +990,13 @@ footer form .input-group-btn .btn:hover {
   }
   .text-16px {
     font-size: 14px;
+}
+.faq-section .nav-tabs {
+  width: 100%;
+}
+.faq-section .nav-tabs .nav-link {
+  padding: 6px 3px;
+  font-size: 13px;
 }
   .hero-section h1 {
     margin-bottom: 20px;
@@ -1004,24 +1008,7 @@ footer form .input-group-btn .btn:hover {
   header .btn {
     padding: 4px 8px !important;
   }
-  .faq-section h2 {
-    font-size: 26px;
-    margin-bottom: 40px;
-  }
-  .faq-section .card .card-header .btn-header-link {
-    font-size: 14px;
-    padding: 15px 0;
-    width: 96%;
-  }
-  .faq-section .card .card-header .btn-header-link:after {
-    position: absolute;
-    right: 12px;
-    top: 15px;
-    font-size: 14px !important;
-  }
-  .faq-section .accordion .card-body {
-    font-size: 14px;
-  }
+
   .award-section .card-body {
     padding: 15px;
   }
