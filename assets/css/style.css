@@ -83,6 +83,12 @@ img {
   border-color: var(--btn-secondary-bg);
   color: var(--text-white);
 }
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: #f1a465;
+  border-color: #f1a465;
+}
 section{
   padding: 60px 0px;
 }
@@ -469,6 +475,27 @@ header .dropdown .dropdown-item:focus {
   margin-bottom: 0;
 }
 /* choose-plan */
+.web-page-tabs .nav-tabs{
+  border-bottom: none;
+}
+.web-page-tabs .nav-tabs .nav-link{
+  background: none;
+  padding: 4px 0px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.web-page-tabs .nav-tabs .nav-link:hover{
+  border:none;
+  border-bottom: 1px solid var(--secondary);
+  color: var(--black);
+
+}
+.web-page-tabs .nav-tabs .nav-link.active{
+  border:none;
+  border-bottom: 1px solid var(--secondary);
+  color: var(--black);
+}
+
 .choose-plan .card{
   border: none;
   border-radius: 0px 0px 30px 30px;
