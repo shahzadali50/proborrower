@@ -180,77 +180,22 @@ header .navbar-brand img {
 
 /* Award */
 
-.award-section {
-  padding: 50px 0;
-}
-
-.award-section .card {
-  border-radius: 8px;
+.most-popular-features .card {
   border: none;
-  background: var(--bg-gray);
   margin-bottom: 20px;
-  box-shadow: 0 0px 6px #0000001a;
 }
 
-.award-section .card .media {
-  align-items: center;
+.most-popular-features .card .media {
+  align-items: start;
 }
 
-.award-section .card .media img {
-  margin-right: 25px;
-}
-
-.award-section .card h5 {
-  font-weight: 600;
-}
-
-.award-section .card p {
+.most-popular-features .card p {
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.award-section .card a {
+.most-popular-features .card a {
   color: #55C7FD;
-}
-
-.award-bg {
-  background-image: url('../../assets/images/certificate.png');
-  padding: 15px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-}
-
-.award-bg .certi {
-  max-width: 110px;
-  display: block;
-  margin: 0 auto;
-}
-
-.award-bg .card p {
-  font-size: 10px !important;
-}
-
-.award-bg .star {
-  width: 70px;
-}
-
-.award-bg h6 {
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.award-bg h6 .text-danger {
-  color: red !important;
-}
-
-.award-bg .card {
-  max-width: 220px;
-  margin: 0 auto 100px;
-  position: relative;
-  top: 50px;
-  right: -61px;
 }
 
 /* choose-plan */
@@ -337,18 +282,7 @@ header .navbar-brand img {
 }
 
 .choose-plan .recommended {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.choose-plan .recommended-badge {
-  cursor: context-menu !important;
-  z-index: +9999;
-  position: relative;
-  padding: 6px 10px;
-  background-color: var(--btn-secondary-bg);
-  color: var(--white);
-  font-size: 14px !important;
-  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .choose-plan .comparisons {
@@ -359,6 +293,10 @@ header .navbar-brand img {
 .choose-plan .comparisons:hover {
   color: var(--primary);
   border-bottom: 1px solid var(--primary);
+}
+
+.pricing-plan {
+  margin-bottom: 25px;
 }
 
 
@@ -666,8 +604,9 @@ footer form .input-group-btn .btn:hover {
     padding: 0;
     font-size: 14px;
   }
+
   .choose-plan .card {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 30px 30px 30px 30px;
   }
 
@@ -678,7 +617,8 @@ footer form .input-group-btn .btn:hover {
   .product-section .card-body {
     padding: 20px;
   }
-  .award-section .text-right h2 {
+
+  .most-popular-features .text-right h2 {
     display: none;
   }
 
@@ -704,6 +644,7 @@ footer form .input-group-btn .btn:hover {
   .web-page-tabs .nav-tabs .nav-link {
     font-size: 16px;
   }
+
   .hero-section {
     padding: 100px 0 0;
     text-align: center;
@@ -713,16 +654,12 @@ footer form .input-group-btn .btn:hover {
     margin: 0 auto 30px;
   }
 
-  .award-section .card .media img {
-    margin-right: 15px;
-    max-width: 70px;
-  }
 
-  .award-section .card h5 {
+  .most-popular-features .card h5 {
     font-size: 16px;
   }
 
-  .award-section .card p {
+  .most-popular-features .card p {
     font-size: 13px;
   }
 
@@ -794,6 +731,10 @@ footer form .input-group-btn .btn:hover {
     padding: 30px 0px;
   }
 
+  .pricing-plan {
+    margin-bottom: 0px;
+  }
+
   .main-heading {
     font-size: 25px;
   }
@@ -820,35 +761,19 @@ footer form .input-group-btn .btn:hover {
     font-size: 13px;
   }
 
-  .award-section .card-body {
+  .most-popular-features .card-body {
     padding: 15px;
   }
 
-  .award-section .card h5 {
+  .most-popular-features .card h5 {
     font-size: 14px;
   }
 
-  .award-section .card p {
+  .most-popular-features .card p {
     font-size: 12px;
   }
 
   .footer-blog .media img {
     max-width: 55px;
-  }
-  .award-bg .card {
-    max-width: 160px;
-    margin: 0 auto 100px;
-    position: relative;
-    top: 55px;
-    right: -53px;
-  }
-
-  .award-bg h6 {
-    font-weight: 700;
-    font-size: 10px;
-  }
-
-  .award-bg .certi {
-    max-width: 60px;
   }
 }
