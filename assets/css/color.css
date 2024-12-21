@@ -4,6 +4,7 @@
 	--black: #1a1a1a;
 	--white: #fff;
 	--primary: #0fa9cb;
+	--secondary: #fb8f37;
 
 	/* Background color */
 	--bg-white: #ffffff;
@@ -16,7 +17,6 @@
 	--text-blue: #1c1a4f;
 	--text-black: #1a1a1a;
 	--text-white: #fff;
-	--text-primary: #ffffff;
 
 	/* Button */
 	--btn-primary-bg: #0fa9cb;
