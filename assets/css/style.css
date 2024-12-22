@@ -117,6 +117,10 @@ section {
   margin-bottom: 50px;
 }
 
+.text-40px{
+  font-size: 40px;
+  font-weight: 700;
+}
 .text-22px {
   font-size: 22px;
   font-weight: 500;
@@ -177,8 +181,71 @@ header .bottom-links .nav-link .user-icon {
 header .navbar-brand img {
   width: 200px;
 }
+/* hero */
+.hero{
+  background-color: #f1f4ff;
+}
+.hero .content{
+  margin-top: 80px;
+}
+.hero .row {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.hero .content {
+  margin-top: 80px;
+}
 
-/* Award */
+.hero .row {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero .row::before,
+.hero .row::after {
+  content: "";
+  position: absolute;
+  top: -117px;
+  bottom: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; 
+}
+
+/* First image on the left */
+.hero .row::before {
+  border: 2px solid rgb(19, 17, 17);
+  left: 0;
+  background-image: url('../images/hero/gridient-blue.png');
+  width: 50%; 
+  height: 50%;
+}
+
+/* Second image on the right */
+.hero .row::after {
+  border: 2px solid red;
+  right: 0;
+  top: -117px; 
+  background-image: url('../images/hero/gridient-dark-purple.png');
+  width: 50%; 
+  height: 50%;
+}
+.hero p{
+  padding: 20px 0px;
+}
+.hero .dashboard{
+  border-radius: 12px;
+  border: 6px solid rgb(255, 255, 255);
+  margin: 20px 0px;
+
+}
+
+/* most-popular-features */
 
 .most-popular-features .card {
   border: none;
@@ -460,7 +527,7 @@ footer .footer-logo {
 }
 
 footer h5 {
-  color: var(--text-blue);
+  color: var(--black);
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -480,7 +547,7 @@ footer ul li {
 }
 
 .footer-link a {
-  color: var(--text-blue);
+  color: var(--black);
   font-weight: 500;
 }
 
