@@ -1,6 +1,5 @@
-/* Import Google Fonts */
 /* Color Variable */
-@import 'color.css';
+@import "color.css";
 
 body {
   margin: 0;
@@ -25,33 +24,6 @@ a:hover {
 .container {
   max-width: 1200px;
 }
-
-.form-control {
-  background: var(--white);
-  box-sizing: border-box;
-  border-radius: 6px;
-  height: 45px;
-  font-size: 14px;
-  color: var(--text-primary);
-  padding: 5px 20px;
-  font-weight: 600;
-}
-
-.form-control::placeholder {
-  color: #c7c3c3;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  outline: none;
-  color: var(--text-blue);
-  border: 1px solid var(--primary) !important;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
 img {
   max-width: 100%;
 }
@@ -117,7 +89,7 @@ section {
   margin-bottom: 50px;
 }
 
-.text-40px{
+.text-40px {
   font-size: 40px;
   font-weight: 700;
 }
@@ -135,7 +107,7 @@ section {
 }
 
 /* header*/
-header{
+header {
   background-color: #f1f4ff;
 }
 header .top-links {
@@ -150,6 +122,9 @@ header .top-links .nav-link {
 header .top-links .nav-item {
   margin: 0px 10px;
 }
+header nav{
+  z-index: +9999;
+}
 
 header .nav-link.active {
   border-bottom: 2px solid var(--secondary);
@@ -159,7 +134,6 @@ header .top-links .navbar {
   max-width: 1200px;
   margin: 0px auto;
   padding-bottom: 0px !important;
-
 }
 
 header .bottom-links .nav-link {
@@ -169,12 +143,10 @@ header .bottom-links .nav-link {
 
 header .top-links .nav-link {
   color: var(--black) !important;
-
 }
 
 header .bottom-links .nav-item {
   padding-right: 20px;
-
 }
 
 header .bottom-links .nav-link .user-icon {
@@ -185,60 +157,30 @@ header .navbar-brand img {
   width: 200px;
 }
 /* hero */
-.hero{
+.hero {
   background-color: #f1f4ff;
   padding-bottom: 0px;
 }
-.hero .text-40px{
+.hero .text-40px {
   padding: 15px 0px;
 }
 
-.hero .left-img{
+.hero .left-img {
   width: 50%;
   position: absolute;
   left: 0;
   top: -125px;
 }
-.hero .right-img{
+.hero .right-img {
   width: 50%;
   position: absolute;
   right: 0;
   top: -125px;
 }
-
-/* .hero .row::before,
-.hero .row::after {
-  content: "";
-  position: absolute;
-  top: -117px;
-  bottom: 0;
-  z-index: 1;
-  background-size: contain;
-  background-position: center;
-  opacity: 0.5; 
-} */
-
-/* First image on the left */
-/* .hero .row::before {
-  left: 0;
-  background-image: url('../images/hero/gridient-blue.png');
-  width: 50%; 
-  height: 50%;
-} */
-
-/* Second image on the right */
-/* .hero .row::after {
-  right: 0;
-  top: -117px; 
-  background-image: url('../images/hero/gridient-dark-purple.png');
-  width: 50%; 
-  height: 50%;
-} */
 .hero .dashboard {
   padding: 70px 0px;
-
 }
-.hero .dashboard img{
+.hero .dashboard img {
   border-radius: 12px;
   border: 6px solid rgb(255, 255, 255);
 }
@@ -260,16 +202,13 @@ header .navbar-brand img {
 }
 
 .most-popular-features .card a {
-  color: #55C7FD;
+  color: #55c7fd;
 }
-.most-popular-features .main-heading{
-  padding-top: 25px;
-
+.most-popular-features .main-heading {
+  padding-top: 35px;
 }
 
-
-
-/* choose-plan */
+/* .web-page-tab */
 
 .web-page-tabs .nav-tabs {
   border-bottom: none;
@@ -286,7 +225,6 @@ header .navbar-brand img {
   border: none;
   border-bottom: 1px solid var(--secondary);
   color: var(--black);
-
 }
 
 .web-page-tabs .nav-tabs .nav-link.active {
@@ -310,7 +248,6 @@ header .navbar-brand img {
 }
 
 .choose-plan .plan-price {
-
   padding: 50px 0px 20px 0px;
 }
 
@@ -368,11 +305,27 @@ header .navbar-brand img {
   color: var(--primary);
   border-bottom: 1px solid var(--primary);
 }
+.choose-plan .main-heading{
+  padding-top: 35px;
+  margin-bottom: 30px;
+}
+.choose-plan .recommended-badge{
+  background: var(--btn-secondary-bg);
+  border-color: var(--btn-secondary-bg);
+  color: var(--text-white);
+  cursor: copy !important;
+  position: relative;
+  z-index: +1000;
+  top: 25px;
+  margin-bottom: 0px;
+}
 
 .pricing-plan {
   margin-bottom: 25px;
 }
-
+.pricing-plan .main-heading{
+  padding-top: 0px;
+}
 
 /* FAQ */
 .faq-section p {
@@ -384,7 +337,7 @@ header .navbar-brand img {
 }
 
 .faq-section .card-header {
-  background: #5268C2;
+  background: #5268c2;
   padding: 10px 10px 0;
   border: none;
   border-radius: 15px 15px 0px 0px;
@@ -408,7 +361,6 @@ header .navbar-brand img {
 .faq-section .nav-tabs .nav-link:hover {
   background: var(--primary);
   border-color: var(--primary);
-  ;
   color: var(--white);
 }
 
@@ -444,7 +396,6 @@ header .navbar-brand img {
 .faq-section .card .card-header .btn-header-link .add-question {
   color: var(--black);
   width: 360px;
-  ;
 }
 
 .faq-section .card .card-header .btn-header-link.collapsed:after {
@@ -649,6 +600,7 @@ footer form .input-group-btn .btn:hover {
   background-color: #d6d8de;
 }
 
+
 /* Media Query */
 
 @media (min-width: 991px) {
@@ -657,7 +609,8 @@ footer form .input-group-btn .btn:hover {
   }
 }
 
-@media (min-width: 991px) and (max-width: 1200px) {}
+@media (min-width: 991px) and (max-width: 1200px) {
+}
 
 @media only screen and (max-width: 1200px) {
   header .nav-item {
@@ -668,11 +621,9 @@ footer form .input-group-btn .btn:hover {
     margin-bottom: 30px;
     font-size: 50px;
   }
-
 }
 
 @media only screen and (max-width: 991px) {
-
   .works .text-22px {
     width: 100%;
   }
@@ -690,21 +641,21 @@ footer form .input-group-btn .btn:hover {
   .choose-plan .card .plan-price {
     border-radius: 30px 30px 0px 0px;
   }
-
-  .product-section .card-body {
-    padding: 20px;
-  }
-
-
   .copy-right {
     text-align: center;
   }
 }
 
 @media (max-width: 767px) {
+  section {
+    padding: 30px 0px;
+}
   .main-heading {
     font-size: 30px;
     margin-bottom: 20px;
+  }
+  .hero .dashboard {
+    padding: 40px 0px;
   }
 
   .works .card img {
@@ -719,15 +670,9 @@ footer form .input-group-btn .btn:hover {
     font-size: 16px;
   }
 
-  .hero-section {
-    padding: 100px 0 0;
-    text-align: center;
-  }
-
   .hero-section .form-group {
     margin: 0 auto 30px;
   }
-
 
   .most-popular-features .card h5 {
     font-size: 16px;
@@ -777,12 +722,22 @@ footer form .input-group-btn .btn:hover {
 }
 
 @media (max-width: 576px) {
+  .text-40px {
+    font-size: 25px;
+  }
   .text-20px {
     font-size: 17px;
   }
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
 
   header .try-for-free {
-    padding: 5px 12px
+    padding: 5px 12px;
   }
 
   header .navbar-brand img {
@@ -791,6 +746,11 @@ footer form .input-group-btn .btn:hover {
 
   .navbar-light .navbar-toggler {
     border: none;
+  }
+  .hero .left-img,
+  .hero .right-img
+   {
+  top: -33px;
   }
 
   .works .card {
@@ -802,7 +762,7 @@ footer form .input-group-btn .btn:hover {
   }
 
   section {
-    padding: 30px 0px;
+    padding: 20px 0px;
   }
 
   .pricing-plan {
@@ -815,7 +775,6 @@ footer form .input-group-btn .btn:hover {
 
   .text-22px {
     font-size: 18px;
-    ;
   }
 
   .text-16px {
