@@ -135,6 +135,9 @@ section {
 }
 
 /* header*/
+header{
+  background-color: #f1f4ff;
+}
 header .top-links {
   border-bottom: 1px solid #dedede;
   padding-left: 18px;
@@ -184,65 +187,60 @@ header .navbar-brand img {
 /* hero */
 .hero{
   background-color: #f1f4ff;
+  padding-bottom: 0px;
 }
-.hero .content{
-  margin-top: 80px;
-}
-.hero .row {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-}
-.hero .content {
-  margin-top: 80px;
+.hero .text-40px{
+  padding: 15px 0px;
 }
 
-.hero .row {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
+.hero .left-img{
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: -125px;
+}
+.hero .right-img{
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: -125px;
 }
 
-.hero .row::before,
+/* .hero .row::before,
 .hero .row::after {
   content: "";
   position: absolute;
   top: -117px;
   bottom: 0;
   z-index: 1;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   opacity: 0.5; 
-}
+} */
 
 /* First image on the left */
-.hero .row::before {
-  border: 2px solid rgb(19, 17, 17);
+/* .hero .row::before {
   left: 0;
   background-image: url('../images/hero/gridient-blue.png');
   width: 50%; 
   height: 50%;
-}
+} */
 
 /* Second image on the right */
-.hero .row::after {
-  border: 2px solid red;
+/* .hero .row::after {
   right: 0;
   top: -117px; 
   background-image: url('../images/hero/gridient-dark-purple.png');
   width: 50%; 
   height: 50%;
+} */
+.hero .dashboard {
+  padding: 70px 0px;
+
 }
-.hero p{
-  padding: 20px 0px;
-}
-.hero .dashboard{
+.hero .dashboard img{
   border-radius: 12px;
   border: 6px solid rgb(255, 255, 255);
-  margin: 20px 0px;
-
 }
 
 /* most-popular-features */
@@ -264,10 +262,18 @@ header .navbar-brand img {
 .most-popular-features .card a {
   color: #55C7FD;
 }
+.most-popular-features .main-heading{
+  padding-top: 25px;
+
+}
+
+
 
 /* choose-plan */
+
 .web-page-tabs .nav-tabs {
   border-bottom: none;
+  border-bottom: 1px solid #dedede;
 }
 
 .web-page-tabs .nav-tabs .nav-link {
@@ -285,9 +291,10 @@ header .navbar-brand img {
 
 .web-page-tabs .nav-tabs .nav-link.active {
   border: none;
-  border-bottom: 1px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
   color: var(--black);
 }
+/* .choose-plan */
 
 .choose-plan .card {
   border: none;
@@ -498,15 +505,18 @@ header .navbar-brand img {
 
 /* popular-features */
 .features-icon {
-  width: 53px;
-  height: 53px;
+  width: 58px;
+  height: 58px;
   background-color: #d9eff6;
   border-radius: 50%;
   color: #15a5bf;
 }
 
 .features-icon img {
-  width: 25px !important;
+  width: 30px !important;
+}
+.features-icon .mobile-img {
+  width: 20px !important;
 }
 
 .security .main-heading {
@@ -685,9 +695,6 @@ footer form .input-group-btn .btn:hover {
     padding: 20px;
   }
 
-  .most-popular-features .text-right h2 {
-    display: none;
-  }
 
   .copy-right {
     text-align: center;
