@@ -9,9 +9,7 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.png" type="image/ico" />
     <!-- Google fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- owl-carousel -->
@@ -58,7 +56,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto align-items-sm-center">
                         <li class="nav-item d-block d-sm-none">
-                            <a class="nav-link " href="mortgage-borrowers.html">Mortgage Borrowers</a>
+                            <a class="nav-link" href="mortgage-borrowers.html">Mortgage Borrowers</a>
                         </li>
                         <li class="nav-item d-block d-sm-none">
                             <a class="nav-link " href="loan-officers.html">Loan Officers</a>
@@ -91,7 +89,7 @@
                             alt="not-show">
                     </div>
                     <div class="col-lg-10 text-center mx-lg-auto content">
-                        <h1 class="text-blue text-40px">Value Proposition Here</h1>
+                        <h1 class="text-blue text-50px">Value Proposition Here</h1>
                         <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doxcepteur sint
                             occaecat cupidatat non proident, Nemo
                             enim ipsam voluptatem quia voluptassit aspernatur aut </p>
@@ -100,32 +98,34 @@
                         <img class="img-fluid" src="assets/images/hero/dashboard.png" alt="not-show">
                     </div>
                     <div class="col-12 web-page-tabs">
-                        <ul class="nav nav-tabs d-flex justify-content-sm-between" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="features-tab" data-toggle="tab"
-                                    data-target="#Features" type="button" role="tab" aria-controls="Features"
-                                    aria-selected="true">Features</button>
+                        <ul class="nav nav-tabs d-flex justify-content-sm-between">
+                            <li class="nav-item" >
+                                <a href="#most_popular_features" class="nav-link">
+                                    Features
+                                </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="howItWorks-tab" data-toggle="tab" data-target="#HowItWorks"
-                                    type="button" role="tab" aria-controls="HowItWorks" aria-selected="false">How It
-                                    Works</button>
+                            <li class="nav-item" >
+                                <a href="#work" class="nav-link">
+                                    How It Works
+                                </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="security-tab" data-toggle="tab" data-target="#Security"
-                                    type="button" role="tab" aria-controls="Security"
-                                    aria-selected="false">Security</button>
+                            <li class="nav-item" >
+                                <a href="#security" class="nav-link">
+                                    Security
+                                </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="faq-tab" data-toggle="tab" data-target="#FAQ" type="button"
-                                    role="tab" aria-controls="FAQ" aria-selected="false">FAQ</button>
+                            <li class="nav-item" >
+                                <a href="#faq_section" class="nav-link" >
+                                    FAQ
+                                </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pricing-tab" data-toggle="tab" data-target="#Pricing"
-                                    type="button" role="tab" aria-controls="Pricing"
-                                    aria-selected="false">Pricing</button>
+                            <li class="nav-item" >
+                                <a href="#pricing" class="nav-link">
+                                    Pricing
+                                </a>
                             </li>
                         </ul>
+                        
                     </div>
 
                 </div>
@@ -133,174 +133,149 @@
         </section>
 
         <!-- most-popular-features -->
-        <section class="most-popular-features">
+        <section class="most-popular-features" id="most_popular_features">
             <div class="container">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="Features" role="tabpanel" aria-labelledby="features-tab">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="main-heading">Most Popular Features</h2>
+                    </div>
+                    <div class="col-lg-11 mx-lg-auto">
                         <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="main-heading">Most Popular Features</h2>
-                            </div>
-                            <div class="col-lg-11 mx-lg-auto">
-                                <div class="row">
-                                    <!-- 1 -->
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="media">
-                                                    <div
-                                                        class="features-icon d-flex justify-content-center align-items-center">
-                                                        <img class="img-fluid" src="assets/images/features/document.png"
-                                                            alt="not-show">
-                                                    </div>
-                                                    <div class="media-body ml-4">
-                                                        <h6 class="text-20px">All Documents in one Place</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur totam
-                                                            adipiscing elit, sed doxcepteur sint eu fugiat nulla
-                                                            pariatur Excepteur.
-                                                        </p>
-                                                    </div>
-                                                </div>
+                            <!-- 1 -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <div
+                                                class="features-icon d-flex justify-content-center align-items-center">
+                                                <img class="img-fluid" src="assets/images/features/document.png"
+                                                    alt="not-show">
                                             </div>
-                                        </div>
-                                    </div>
-                                    <!-- 2 -->
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="media">
-                                                    <div
-                                                        class="features-icon d-flex justify-content-center align-items-center">
-                                                        <img class="img-fluid" src="assets/images/features/loan.png"
-                                                            alt="not-show">
-                                                    </div>
-                                                    <div class="media-body ml-4">
-                                                        <h6 class="text-20px">Loan Officers Come To You</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur totam
-                                                            adipiscing elit, sed doxcepteur sint eu fugiat nulla
-                                                            pariatur Excepteur.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 3 -->
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="media">
-                                                    <div
-                                                        class="features-icon d-flex justify-content-center align-items-center">
-                                                        <img class="img-fluid mobile-img"
-                                                            src="assets/images/features/mobile.png" alt="not-show">
-                                                    </div>
-                                                    <div class="media-body ml-4">
-                                                        <h6 class="text-20px">Complete & Store Mortgage App</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur totam
-                                                            adipiscing elit, sed doxcepteur sint eu fugiat nulla
-                                                            pariatur Excepteur.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 4 -->
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="media">
-                                                    <div
-                                                        class="features-icon d-flex justify-content-center align-items-center">
-                                                        <img class="img-fluid" src="assets/images/features/multiple.png"
-                                                            alt="not-show">
-                                                    </div>
-                                                    <div class="media-body ml-4">
-                                                        <h6 class="text-20px">Multiple Borrowers</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur totam
-                                                            adipiscing elit, sed doxcepteur sint eu fugiat nulla
-                                                            pariatur Excepteur.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 5 -->
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="media">
-                                                    <div
-                                                        class="features-icon d-flex justify-content-center align-items-center">
-                                                        <img class="img-fluid"
-                                                            src="assets/images/features/sponsored.png" alt="not-show">
-                                                    </div>
-                                                    <div class="media-body ml-4">
-                                                        <h6 class="text-20px">Sponsored Accounts</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur totam
-                                                            adipiscing elit, sed doxcepteur sint eu fugiat nulla
-                                                            pariatur Excepteur.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 6 -->
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="media">
-                                                    <div
-                                                        class="features-icon d-flex justify-content-center align-items-center">
-                                                        <img class="img-fluid" src="assets/images/features/industry.png"
-                                                            alt="not-show">
-                                                    </div>
-                                                    <div class="media-body ml-4">
-                                                        <h6 class="text-20px">Industry Leading Security</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur totam
-                                                            adipiscing elit, sed doxcepteur sint eu fugiat nulla
-                                                            pariatur Excepteur.
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                            <div class="media-body ml-4">
+                                                <h6 class="text-20px">All Documents in one Place</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur totam
+                                                    adipiscing elit, sed doxcepteur sint eu fugiat nulla
+                                                    pariatur Excepteur.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
+                            <!-- 2 -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <div
+                                                class="features-icon d-flex justify-content-center align-items-center">
+                                                <img class="img-fluid" src="assets/images/features/loan.png"
+                                                    alt="not-show">
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <h6 class="text-20px">Loan Officers Come To You</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur totam
+                                                    adipiscing elit, sed doxcepteur sint eu fugiat nulla
+                                                    pariatur Excepteur.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <div
+                                                class="features-icon d-flex justify-content-center align-items-center">
+                                                <img class="img-fluid mobile-img"
+                                                    src="assets/images/features/mobile.png" alt="not-show">
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <h6 class="text-20px">Complete & Store Mortgage App</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur totam
+                                                    adipiscing elit, sed doxcepteur sint eu fugiat nulla
+                                                    pariatur Excepteur.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <div
+                                                class="features-icon d-flex justify-content-center align-items-center">
+                                                <img class="img-fluid" src="assets/images/features/multiple.png"
+                                                    alt="not-show">
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <h6 class="text-20px">Multiple Borrowers</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur totam
+                                                    adipiscing elit, sed doxcepteur sint eu fugiat nulla
+                                                    pariatur Excepteur.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <div
+                                                class="features-icon d-flex justify-content-center align-items-center">
+                                                <img class="img-fluid"
+                                                    src="assets/images/features/sponsored.png" alt="not-show">
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <h6 class="text-20px">Sponsored Accounts</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur totam
+                                                    adipiscing elit, sed doxcepteur sint eu fugiat nulla
+                                                    pariatur Excepteur.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <div
+                                                class="features-icon d-flex justify-content-center align-items-center">
+                                                <img class="img-fluid" src="assets/images/features/industry.png"
+                                                    alt="not-show">
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <h6 class="text-20px">Industry Leading Security</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur totam
+                                                    adipiscing elit, sed doxcepteur sint eu fugiat nulla
+                                                    pariatur Excepteur.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
-                    <!-- Other Tabs Content -->
-                    <div class="tab-pane fade" id="HowItWorks" role="tabpanel" aria-labelledby="howItWorks-tab">
-                        <!-- Content for How It Works -->
-                        <h3>How It Works</h3>
-                        <p>Learn how our system works step by step.</p>
-                    </div>
-                    <div class="tab-pane fade" id="Security" role="tabpanel" aria-labelledby="security-tab">
-                        <!-- Content for Security -->
-                        <h3>Security</h3>
-                        <p>Discover how we ensure the security of your data.</p>
-                    </div>
-                    <div class="tab-pane fade" id="FAQ" role="tabpanel" aria-labelledby="faq-tab">
-                        <!-- Content for FAQ -->
-                        <h3>FAQ</h3>
-                        <p>Find answers to the most frequently asked questions.</p>
-                    </div>
-                    <div class="tab-pane fade" id="Pricing" role="tabpanel" aria-labelledby="pricing-tab">
-                        <!-- Content for Pricing -->
-                        <h3>Pricing</h3>
-                        <p>Check out our competitive pricing plans.</p>
-                    </div>
+
                 </div>
             </div>
         </section>
         <!-- works -->
-        <section class="works">
+        <section class="works" id="work">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-12 text-center">
@@ -402,7 +377,7 @@
             </div>
         </section>
         <!-- security -->
-        <section class="security">
+        <section class="security" id="security">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-12 text-center">
@@ -441,7 +416,7 @@
             </div>
         </section>
         <!-- Faq -->
-        <section class="faq-section">
+        <section class="faq-section" id="faq_section">
             <div class="container">
                 <div class="row justify-content-md-between">
                     <div class="col-md-4">
@@ -450,17 +425,17 @@
                     <div class="col-md-8 d-flex justify-content-md-end">
                         <div>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
+                                <li class="nav-item" >
                                     <button class="nav-link active" data-toggle="tab" data-target="#Pre_Registration"
                                         type="button" role="tab" aria-controls="Pre_Registration"
                                         aria-selected="true">Pre-Registration</button>
                                 </li>
-                                <li class="nav-item mx-2" role="presentation">
+                                <li class="nav-item mx-2" >
                                     <button class="nav-link" data-toggle="tab" data-target="#After_Signup" type="button"
                                         role="tab" aria-controls="After_Signup" aria-selected="false">After
                                         Signup</button>
                                 </li>
-                                <li class="nav-item" role="presentation">
+                                <li class="nav-item" >
                                     <button class="nav-link" data-toggle="tab" data-target="#messages" type="button"
                                         role="tab" aria-controls="messages" aria-selected="false">On-Going</button>
                                 </li>
@@ -652,7 +627,7 @@
             </div>
         </section>
         <!-- choose-plan -->
-        <section class="choose-plan pricing-plan">
+        <section class="choose-plan pricing-plan" id="pricing">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-md-12 text-center">

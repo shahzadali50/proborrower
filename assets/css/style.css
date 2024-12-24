@@ -7,8 +7,11 @@ body {
   overflow-x: hidden;
   background: var(--bg-white);
   color: var(--text-black);
-  font-family: "Poppins", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
+}
+html{
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -51,6 +54,13 @@ img {
   border-color: var(--btn-primary-bg);
   color: var(--text-white);
 }
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  
+}
 
 .btn-secondary {
   background: var(--btn-secondary-bg);
@@ -61,8 +71,8 @@ img {
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active {
-  background-color: #f1a465 !important;
-  border-color: #f1a465 !important;
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
 }
 
 section {
@@ -85,12 +95,12 @@ section {
   text-align: center;
   font-weight: 600;
   color: var(--text-blue);
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 50px;
 }
 
-.text-40px {
-  font-size: 40px;
+.text-50px {
+  font-size: 50px;
   font-weight: 700;
 }
 .text-22px {
@@ -148,20 +158,28 @@ header .top-links .nav-link {
 header .bottom-links .nav-item {
   padding-right: 20px;
 }
+header .navbar-nav .nav-item .nav-link:hover {
+  color: #0ea7c9 !important;
+}
 
 header .bottom-links .nav-link .user-icon {
+  width: 15px;
+}
+header .bottom-links .nav-link .user-icon:hover {
   width: 15px;
 }
 
 header .navbar-brand img {
   width: 200px;
+  background: none; /* Resets any background styles */
+  background-color: transparent;
 }
 /* hero */
 .hero {
   background-color: #f1f4ff;
   padding-bottom: 0px;
 }
-.hero .text-40px {
+.hero .text-50px {
   padding: 15px 0px;
 }
 
@@ -217,13 +235,14 @@ header .navbar-brand img {
 
 .web-page-tabs .nav-tabs .nav-link {
   background: none;
-  padding: 4px 0px;
-  font-size: 22px;
+  padding: 16px 0px;
+  font-size: 20px;
+  color: var(--black);
 }
 
 .web-page-tabs .nav-tabs .nav-link:hover {
   border: none;
-  border-bottom: 1px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
   color: var(--black);
 }
 
@@ -236,7 +255,8 @@ header .navbar-brand img {
 
 .choose-plan .card {
   border: none;
-  border-radius: 0px 0px 30px 30px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .choose-plan .recommended {
@@ -521,14 +541,12 @@ footer a {
 }
 
 footer ul li a {
-  color: var(--text-white);
-  letter-spacing: 0.9px;
   font-size: 14px;
 }
 
 footer ul li a:hover,
 footer a:hover {
-  color: #0a0a0a;
+  color: #0ea7c9;
 }
 
 footer form .input-group-btn {
@@ -668,6 +686,8 @@ footer form .input-group-btn .btn:hover {
 
   .web-page-tabs .nav-tabs .nav-link {
     font-size: 16px;
+    padding: 10px 0px;
+    
   }
 
   .hero-section .form-group {
@@ -722,14 +742,15 @@ footer form .input-group-btn .btn:hover {
 }
 
 @media (max-width: 576px) {
-  .text-40px {
+  .text-50px {
     font-size: 25px;
   }
   .text-20px {
     font-size: 17px;
   }
   .sticky-header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000;
     background-color: #f8f9fa;
@@ -746,6 +767,9 @@ footer form .input-group-btn .btn:hover {
 
   .navbar-light .navbar-toggler {
     border: none;
+  }
+  .hero {
+    padding-top: 80px;
   }
   .hero .left-img,
   .hero .right-img
@@ -781,8 +805,8 @@ footer form .input-group-btn .btn:hover {
     font-size: 14px;
   }
 
-  .web-page-tabs .nav-tabs .nav-link {
-    padding: 5px;
+  .web-page-tabs .nav-tabs .nav-item {
+    padding-right: 15px;
   }
 
   .faq-section .nav-tabs {
