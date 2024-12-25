@@ -27,10 +27,10 @@
 
   <!-- Header -->
   <header class="sticky-header">
-   <div class="top-links d-none d-sm-block">
+   <div class="top-links d-none d-sm-block mb-sm-2">
        <nav class="navbar navbar-expand-sm navbar-light">
            <div class="collapse navbar-collapse">
-               <ul class="navbar-nav mr-auto align-items-sm-center ">
+               <ul class="navbar-nav mr-auto align-items-sm-center">
                    <li class="nav-item">
                        <a class="nav-link" href="mortgage-borrowers.html">Mortgage Borrowers</a>
                    </li>
@@ -43,41 +43,40 @@
                </ul>
            </div>
        </nav>
-
    </div>
-   <div class="container">
-       <nav class="mt-sm-3 bottom-links navbar navbar-expand-sm navbar-light">
-           <a class="navbar-brand" href="script:void(0);">
-               <img src="assets/images/logo.png" alt="logo">
-           </a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-           </button>
-
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto align-items-sm-center">
-                   <li class="nav-item d-block d-sm-none">
-                       <a class="nav-link " href="mortgage-borrowers.html">Mortgage Borrowers</a>
-                   </li>
-                   <li class="nav-item d-block d-sm-none">
-                       <a class="nav-link " href="loan-officers.html">Loan Officers</a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link" href="script:void(0);"> <img class="img-fluid mr-1 user-icon"
-                               src="assets/images/header/User.png" alt="not-show"> login</a>
-                   </li>
-                   <li class="nav-item">
-                       <a href="script:void(0);" class="btn btn-secondary try-for-free" type="submit">Try For
-                           Free</a>
-                   </li>
-
-               </ul>
-           </div>
-       </nav>
+   <div class="fixed-header">
+      <div class="container">
+         <nav class="bottom-links navbar navbar-expand-sm navbar-light header-bottom-sticky px-0">
+             <a class="navbar-brand" href="script:void(0);">
+                 <img src="assets/images/logo.png" alt="logo">
+             </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse"
+                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                 aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav ml-auto align-items-sm-center">
+                     <li class="nav-item d-block d-sm-none">
+                         <a class="nav-link" href="mortgage-borrowers.html">Mortgage Borrowers</a>
+                     </li>
+                     <li class="nav-item d-block d-sm-none">
+                         <a class="nav-link" href="loan-officers.html">Loan Officers</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="script:void(0);">
+                             <img class="img-fluid mr-1 user-icon" src="assets/images/header/User.png" alt="not-show">
+                             login
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="script:void(0);" class="btn btn-secondary try-for-free" type="submit">Try For Free</a>
+                     </li>
+                 </ul>
+             </div>
+         </nav>
+     </div>
    </div>
-
 </header>
 
    <!-- main -->
@@ -100,38 +99,46 @@
                  <div class="col-12 dashboard">
                      <img class="img-fluid" src="assets/images/hero/dashboard.png" alt="not-show">
                  </div>
-                 <div class="col-12 web-page-tabs">
-                  <ul class="nav nav-tabs d-flex justify-content-sm-between">
-                     <li class="nav-item" >
-                         <a href="#most_popular_features" class="nav-link">
-                             Features
-                         </a>
-                     </li>
-                     <li class="nav-item" >
-                         <a href="#work" class="nav-link">
-                             How It Works
-                         </a>
-                     </li>
-                     <li class="nav-item" >
-                         <a href="#security" class="nav-link">
-                             Security
-                         </a>
-                     </li>
-                     <li class="nav-item" >
-                         <a href="#faq_section" class="nav-link" >
-                             FAQ
-                         </a>
-                     </li>
-                     <li class="nav-item" >
-                         <a href="#pricing" class="nav-link">
-                             Pricing
-                         </a>
-                     </li>
-                 </ul>
-                 </div>
+             
 
              </div>
          </div>
+         <div class="web-page-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-tabs d-flex justify-content-sm-between">
+                            <li class="nav-item" >
+                                <a href="#most_popular_features" class="nav-link">
+                                    Features
+                                </a>
+                            </li>
+                            <li class="nav-item" >
+                                <a href="#work" class="nav-link">
+                                    How It Works
+                                </a>
+                            </li>
+                            <li class="nav-item" >
+                                <a href="#security" class="nav-link">
+                                    Security
+                                </a>
+                            </li>
+                            <li class="nav-item" >
+                                <a href="#faq_section" class="nav-link" >
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="nav-item" >
+                                <a href="#pricing" class="nav-link">
+                                    Pricing
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
      </section>
       <!-- choose-plan -->
       <section class="choose-plan" id="pricing">
@@ -449,7 +456,9 @@
                            </p>
                         </div>
                         <div class="col-md-12 col-sm-6 col-12">
-                           <img class="img-fluid" src="assets/images/works/default-img.png" alt="not-show" />
+                           <div class="img-gridient">
+                              <img class="img-fluid " src="assets/images/works/default-img.png" alt="not-show">
+                          </div>
                         </div>
                      </div>
                   </div>
@@ -472,7 +481,9 @@
                            </p>
                         </div>
                         <div class="col-md-12 col-sm-6 col-12">
-                           <img class="img-fluid" src="assets/images/works/default-img.png" alt="not-show" />
+                           <div class="img-gridient">
+                              <img class="img-fluid " src="assets/images/works/default-img.png" alt="not-show">
+                          </div>
                         </div>
                      </div>
                   </div>
@@ -495,7 +506,9 @@
                            </p>
                         </div>
                         <div class="col-md-12 col-sm-6 col-12">
-                           <img class="img-fluid" src="assets/images/works/default-img.png" alt="not-show" />
+                           <div class="img-gridient">
+                              <img class="img-fluid " src="assets/images/works/default-img.png" alt="not-show">
+                          </div>
                         </div>
                      </div>
                   </div>
@@ -518,7 +531,9 @@
                            </p>
                         </div>
                         <div class="col-md-12 col-sm-6 col-12">
-                           <img class="img-fluid" src="assets/images/works/default-img.png" alt="not-show" />
+                           <div class="img-gridient">
+                              <img class="img-fluid " src="assets/images/works/default-img.png" alt="not-show">
+                          </div>
                         </div>
                      </div>
                   </div>
@@ -797,63 +812,62 @@
    <!--  footer -->
    <footer id="footer">
       <div class="container">
-         <div class="row justify-content-between">
-            <div class="col-md-12 col-lg-3 text-center text-lg-left">
-               <img class="footer-logo" src="assets/images/logo.png" alt="logo" />
-               <ul class="social-link mt-3 mb-md-4 mb-lg-0">
-                  <li>
-                     <a href="javascript:void(0)"><img class="social-link-img" src="assets/images/footer/lock.png"
-                           alt="not-show" /></a>
-                  </li>
-                  <li>
-                     <a href="javascript:void(0)"><img class="social-link-img"
-                           src="assets/images//footer/certificate.png" alt="not-show" /></a>
-                  </li>
-                  <li>
-                     <a href="javascript:void(0)"><img class="social-link-img" src="assets/images/footer/payment.png"
-                           alt="not-show" /></a>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-md-4 col-lg-3">
-               <h5 class="mt-4 mt-md-0">Company</h5>
-               <ul class="list-unstyled footer-link">
-                  <li>
-                     <a href="javascript:void(0)">About us </a>
-                  </li>
-                  <li>
-                     <a href="javascript:void(0)">Contact Us</a>
-                  </li>
-                  <li>
-                     <a href="javascript:void(0)">Articles</a>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-md-4 col-lg-3">
-               <h5 class="mt-4 mt-md-0">Services</h5>
-               <ul class="list-unstyled footer-link">
-                  <li>
-                     <a href="javascript:void(0)">For Borrowers </a>
-                  </li>
-                  <li>
-                     <a href="javascript:void(0)">For Loan Officers</a>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-md-4 col-lg-2">
-               <h5 class="mt-4 mt-md-0">Support</h5>
-               <ul class="list-unstyled footer-link">
-                  <li>
-                     <a href="javascript:void(0)">Submit a ticket </a>
-                  </li>
-                  <li>
-                     <a href="javascript:void(0)">Start a chat</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
+          <div class="row justify-content-between">
+              <div class="col-md-12 col-lg-3 text-center text-lg-left">
+                  <img class="footer-logo" src="assets/images/logo.png" alt="logo">
+                  <ul class="social-link mt-3 mb-md-4 mb-lg-0">
+                      <li> <a href="javascript:void(0)"><img class="social-link-img"
+                                  src="assets/images/footer/lock.png" alt="not-show"></a></li>
+                      <li> <a href="javascript:void(0)"><img class="social-link-img"
+                                  src="assets/images//footer/certificate.png" alt="not-show"></a>
+                      </li>
+                      <li> <a href="javascript:void(0)"><img class="social-link-img"
+                                  src="assets/images/footer/payment.png" alt="not-show"></a></li>
+
+                  </ul>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                  <h5 class="mt-4 mt-md-0">Company</h5>
+                  <ul class="list-unstyled footer-link">
+                      <li>
+                          <a href="javascript:void(0)">About us
+                          </a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">Contact Us</a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">Articles</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                  <h5 class="mt-4 mt-md-0">Services</h5>
+                  <ul class="list-unstyled footer-link">
+                      <li>
+                          <a href="mortgage-borrowers.html">For Borrowers
+                          </a>
+                      </li>
+                      <li>
+                          <a href="loan-officers.html">For Loan Officers</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-lg-2">
+                  <h5 class="mt-4 mt-md-0">Support</h5>
+                  <ul class="list-unstyled footer-link">
+                      <li>
+                          <a href="javascript:void(0)">Submit a ticket
+                          </a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">Start a chat</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
-   </footer>
+  </footer>
    <!-- Copy Right -->
    <div class="copy-right">
       <div class="container">

@@ -171,9 +171,33 @@ header .bottom-links .nav-link .user-icon:hover {
 
 header .navbar-brand img {
   width: 200px;
-  background: none; /* Resets any background styles */
+  background: none;
   background-color: transparent;
 }
+.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--bg-white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease-in-out; 
+}
+.web-page-tabs-fixed {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: var(--bg-white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease-in-out; 
+  z-index:+999;
+}
+.visible-title {
+  visibility: visible;
+}
+
 /* hero */
 .hero {
   background-color: #f1f4ff;
@@ -208,6 +232,8 @@ header .navbar-brand img {
 .most-popular-features .card {
   border: none;
   margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--primary);
 }
 
 .most-popular-features .card .media {
@@ -335,7 +361,7 @@ header .navbar-brand img {
   color: var(--text-white);
   cursor: copy !important;
   position: relative;
-  z-index: +1000;
+  z-index: 200;
   top: 25px;
   margin-bottom: 0px;
 }
@@ -350,6 +376,7 @@ header .navbar-brand img {
 /* FAQ */
 .faq-section p {
   color: rgb(131, 130, 130);
+  padding: 0px 10px;
 }
 
 .faq-section .card {
@@ -374,6 +401,7 @@ header .navbar-brand img {
   padding: 6px 15px;
   margin-bottom: 0px;
   border-radius: 5px;
+  border: 1px solid var(--primary);
 }
 
 .faq-section .nav-tabs .nav-item.show .nav-link,
@@ -387,7 +415,7 @@ header .navbar-brand img {
 .faq-section .card .card-header .btn-header-link {
   display: block;
   text-align: left;
-  padding: 15px 0;
+  padding: 17px 10px;
   border-radius: 0;
   font-weight: 400;
 }
@@ -416,6 +444,7 @@ header .navbar-brand img {
 .faq-section .card .card-header .btn-header-link .add-question {
   color: var(--black);
   width: 360px;
+  margin-bottom: 0px;
 }
 
 .faq-section .card .card-header .btn-header-link.collapsed:after {
@@ -432,6 +461,9 @@ header .navbar-brand img {
 .faq-section .accordion .card {
   box-shadow: none;
   margin-bottom: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--primary);
+
 }
 
 .faq-section .accordion .card-header {
@@ -472,6 +504,11 @@ header .navbar-brand img {
   font-size: 22px;
   font-weight: 600;
   border: 8px solid #eff3ff;
+}
+.works .img-gridient{
+  padding: 40px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgba(240,239,253,1) 0%, rgba(248,246,252,1) 50%, rgba(227,241,248,1) 84%);
 }
 
 /* popular-features */
@@ -655,6 +692,11 @@ footer form .input-group-btn .btn:hover {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 30px 30px 30px 30px;
   }
+  .works .card img{
+    height: 247px;
+  }
+  .works .img-gridient {
+    padding: 25px;
 
   .choose-plan .card .plan-price {
     border-radius: 30px 30px 0px 0px;
@@ -681,7 +723,7 @@ footer form .input-group-btn .btn:hover {
   }
 
   .faq-section .accordion .card {
-    margin: 0px 20px 0px 20px;
+    margin: 20px 10px;
   }
 
   .web-page-tabs .nav-tabs .nav-link {
@@ -805,9 +847,11 @@ footer form .input-group-btn .btn:hover {
     font-size: 14px;
   }
 
+
   .web-page-tabs .nav-tabs .nav-item {
     padding-right: 15px;
   }
+
 
   .faq-section .nav-tabs {
     width: 100%;

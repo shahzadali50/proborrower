@@ -27,3 +27,18 @@ $(document).ready(function(){
     })
   
 });
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 300) {
+        $('.fixed-header').addClass('is-fixed visible-title');
+    } else {
+        $('.fixed-header').removeClass('is-fixed visible-title');
+    }
+});
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 1400) {
+        $('.web-page-tabs').addClass('web-page-tabs-fixed visible-title');
+    } else {
+        $('.web-page-tabs').removeClass('web-page-tabs-fixed visible-title');
+    }
+});
