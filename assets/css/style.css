@@ -184,16 +184,7 @@ header .navbar-brand img {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: top 0.3s ease-in-out; 
 }
-.web-page-tabs-fixed {
-  position: fixed;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background: var(--bg-white);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: top 0.3s ease-in-out; 
-  z-index:+999;
-}
+
 .visible-title {
   visibility: visible;
 }
@@ -661,6 +652,16 @@ footer form .input-group-btn .btn:hover {
 @media (min-width: 991px) {
   .faq-section .nav-tabs {
     min-width: 415px;
+  }
+  .web-page-tabs-fixed {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease-in-out; 
+    z-index:+999;
   }
 }
 
